@@ -12,8 +12,6 @@ after_bundler do
   config.omniauth :twitter, 'APP_ID', 'APP_SECRET'
 CONFIGS
 
-  route "devise_for :users"
-
   in_root do
     inject_into_file 'config/initializers/devise.rb', configs, {before: "\nend", verbose: false}
   end
@@ -36,15 +34,9 @@ CONFIGS
   copy_static_file 'app/controllers/users/omniauth_callbacks_controller.rb'
   copy_static_file 'app/controllers/authorizations_controller.rb'
 
-  routes = <<ROUTES
+  route "devise_for :users, :controllers => { :omniauth_callbacks => \"users/omniauth_callbacks\" }"
+  route "resources :authorizations, only: [:destroy]"
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-  resources :authorizations, only: [:destroy]
-ROUTES
-
-  in_root do
-    inject_into_file 'config/routes.rb', routes, {after: "RailsTemplateTest::Application.routes.draw do", verbose: false}
-  end
   git :add => '.'
   git :commit => "-aqm 'Create Users::OmniauthCallbacks and Authorizations controller'"
 
