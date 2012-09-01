@@ -6,6 +6,12 @@ en:
         connect_disconnect: "Connect/Disconect"
         unhappy: "Unhappy?"
         cancel_my_account: "Cancel my account"
+        edit_devise_resource: "Edit %{resource_name}"
+        connect_your_provider: "Connect your %{provider_name}"
+        disconnect_from_provider: "Disconnect from %{provider_name}"
+        back: "Back"
+        update: "Update"
+        are_you_sure: "Are you sure?"
       new:
         sign_up: "Sign Up"
         sign_in: "Sign In"
@@ -13,6 +19,9 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Password confirmation"
+    sessions:
+      new:
+        sign_in: "Sign in"
     confirmations:
       new:
         resend_confirmation_instructions: "Resend confirmation instructions"
@@ -23,8 +32,7 @@ en:
       reset_password_instructions:
         if_you_didn_t_request_this: "If you didn't request this, please ignore this email."
         your_password_wont_change: "Your password won't change until you access the link above and create a new one."
-
-someone_has_requested_a_link_to_change_your_password: "Someone has requested a link to change your password, and you can do this through the link below."
+        someone_has_requested_a_link_to_change_your_password: "Someone has requested a link to change your password, and you can do this through the link below."
       unlock_instructions:
         hello_email: "Hello %{email}!"
         your_account_has_been_locked: "Your account has been locked due to an excessive amount of unsuccessful sign in attempts."
@@ -38,11 +46,7 @@ someone_has_requested_a_link_to_change_your_password: "Someone has requested a l
       new:
         forgot_your_password: "Forgot your password?"
         send_me_reset_password_instructions: "Send me reset password instructions"
-    registrations:
-      edit:
-        edit_devise_resource: "Edit %{resource_name}"
-        connect_your_provider: "Connect your %{provider_name}"
-        disconnect_from_provider: "Disconnect from %{provider_name}"
+
     unlocks:
       new:
         resend_unlock_instructions: "Resend unlock instructions"
@@ -61,5 +65,6 @@ someone_has_requested_a_link_to_change_your_password: "Someone has requested a l
         unlock_my_account: "Unlock my account"
         confirm_my_account: "Confirm my account"
         change_my_password: "Change my password"
-        or: "or"
+        or: " or "
         back: "Back"
+
