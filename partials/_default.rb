@@ -5,9 +5,10 @@ gsub_file 'app/views/layouts/application.html.slim', /PROJECT/, @app_name
 git :add => '.'
 git :commit => "-aqm 'Add application layout in slim.'"
 
-copy_static_file 'config/locales/rails.pt-BR.yml'
+copy_static_file 'config/locales/devise.views.en.yml'
+copy_static_file 'config/locales/devise.simple_form.en.yml'
 git :add => '.'
-git :commit => "-aqm 'Add rails locale for pt-BR.'"
+git :commit => "-aqm 'Add default locales for en.'"
 
 copy_static_file '.gitignore'
 git :add => '.'

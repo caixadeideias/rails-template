@@ -1,15 +1,9 @@
-if would_you_like? "Do you want use the simple_form? [y,n]".red
-  gsub_file 'Gemfile', /#gem 'simple_form/, "gem 'simple_form"
+puts "Configuring the simple_form... ".magenta
 
+gsub_file 'Gemfile', /#gem 'simple_form/, "gem 'simple_form"
 
-  after_bundler do
-    if would_you_like? "Do you want use the simple_form with twitter bootstrap? [y,n]".red
-      generate 'simple_form:install --bootstrap'
-    else
-      generate 'simple_form:install'
-    end
-    git :add => '.'
-    git :commit => "-aqm 'Configure simple_form.'"
-  end
+after_bundler do
+  generate 'simple_form:install --bootstrap'
+  git :add => '.'
+  git :commit => "-aqm 'Configure simple_form.'"
 end
-
