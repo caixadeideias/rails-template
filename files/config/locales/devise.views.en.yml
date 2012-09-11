@@ -46,14 +46,12 @@ en:
       new:
         forgot_your_password: "Forgot your password?"
         send_me_reset_password_instructions: "Send me reset password instructions"
-
     unlocks:
       new:
         resend_unlock_instructions: "Resend unlock instructions"
     shared:
       are_you_sure: "Are you sure?"
       update: "Update"
-
       social_links:
         sign_in_with: "Sign in with %{provider}"
       links:
@@ -67,4 +65,3 @@ en:
         change_my_password: "Change my password"
         or: " or "
         back: "Back"
-
