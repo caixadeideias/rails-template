@@ -63,7 +63,7 @@ puts "\n========================================================="
 puts " STARTUPDEV RAILS 3 TEMPLATE".yellow.bold
 puts "=========================================================\n"
 
-# TODO: timezone, Add rspec extensions
+# TODO: Add rspec extensions
 
 apply_n :git
 apply_n :cleanup
