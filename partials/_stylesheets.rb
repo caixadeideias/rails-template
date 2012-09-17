@@ -14,3 +14,6 @@ run "echo '\n@import bootstrap' >> app/assets/stylesheets/application.sass"
 git :add => '.'
 git :commit => "-aqm 'Add twitter bootstrap'"
 
+copy_static_file 'app/assets/stylesheets/_flash.css.scss'
+git :add => '.'
+git :commit => '-aqm Add _flash.css.scss'

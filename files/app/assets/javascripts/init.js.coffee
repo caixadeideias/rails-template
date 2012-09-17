@@ -27,6 +27,7 @@ jQuery ->
     execFilter('init')
     exec(controllerClass, controllerName, action)
     execFilter('finish')
+    execFilter('flash')
 
     $.ajaxSetup
         dataType: 'html'
