@@ -5,7 +5,7 @@ gsub_file 'app/views/layouts/application.html.slim', /PROJECT/, @app_name
 git :add => '.'
 git :commit => "-aqm 'Add application layout in slim.'"
 
-gsub_file 'config/environments/development.rb' "::Application.configure do", "::Application.configure do
+gsub_file 'config/environments/development.rb', "::Application.configure do", "::Application.configure do
   Slim::Engine.set_default_options :pretty => true"
 git :add => '.'
 git :commit => "-aqm Add Slim pretty option"
