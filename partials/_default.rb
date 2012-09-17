@@ -10,6 +10,10 @@ gsub_file 'config/environments/development.rb', "::Application.configure do", ":
 git :add => '.'
 git :commit => "-aqm Add Slim pretty option"
 
+copy_static_file 'app/views/layouts/_flash.html.slim'
+git :add => '.'
+git :commit => "-aqm 'Add flash partial.'"
+
 copy_static_file 'config/locales/devise.views.en.yml'
 copy_static_file 'config/locales/devise.simple_form.en.yml'
 git :add => '.'
