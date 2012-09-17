@@ -5,6 +5,10 @@ gsub_file 'app/views/layouts/application.html.slim', /PROJECT/, @app_name
 git :add => '.'
 git :commit => "-aqm 'Add application layout in slim.'"
 
+copy_static_file 'app/views/layouts/_flash.html.slim'
+git :add => '.'
+git :commit => "-aqm 'Add flash partial.'"
+
 copy_static_file 'config/locales/devise.views.en.yml'
 copy_static_file 'config/locales/devise.simple_form.en.yml'
 git :add => '.'
