@@ -5,12 +5,12 @@ A rails application template which born from [Startup DEV][startupdev] and now i
 ## Usage
 
 1. Clone rails-template to your home directory.
-```
-git clone git://github.com/josemarluedke/rails-template.git
+```sh
+git clone git://github.com/caixadeideias/rails-template.git
 ```
 
 2. Run rails new app command using this template.
-```
+```sh
 rails new app_name -m ~/rails-template/template.rb
 ```
 
@@ -21,18 +21,18 @@ rails new app_name -m ~/rails-template/template.rb
 If you will use devise and omniauth, switch the branch to devise-omniauth
 
 1. Clone rails-template to your home directory.
-```
-git clone git://github.com/josemarluedke/rails-template.git
+```sh
+git clone git://github.com/caixadeideias/rails-template.git
 ```
 
 2. Switch the branch to devise-omniauth
-```
+```sh
 cd rails-template
 git checkout devise-omniauth
 ```
 
 3. Run rails new app command using this template.
-```
+```sh
 rails new app_name -m ~/rails-template/template.rb
 ```
 
