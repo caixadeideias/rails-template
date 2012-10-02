@@ -1,0 +1,6 @@
+pt-BR:
+  simple_form:
+    hints:
+      user:
+        password: "deixe em branco caso não queira mudá-la"
+        current_password: "precisamos de sua senha atual para confirmar sua alterações"

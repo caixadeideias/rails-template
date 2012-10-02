@@ -15,9 +15,15 @@ git :add => '.'
 git :commit => "-aqm 'Add flash partial.'"
 
 copy_static_file 'config/locales/devise.views.en.yml'
+copy_static_file 'config/locales/devise.views.pt-BR.yml'
 copy_static_file 'config/locales/devise.simple_form.en.yml'
+copy_static_file 'config/locales/devise.simple_form.pt-BR.yml'
+copy_static_file 'config/locales/devise.en.yml'
+copy_static_file 'config/locales/devise.pt-BR.yml'
+copy_static_file 'config/locales/simple_form.en.yml'
+copy_static_file 'config/locales/simple_form.pt-BR.yml'
 git :add => '.'
-git :commit => "-aqm 'Add default locales for en.'"
+git :commit => "-aqm 'Add default locales for en and pt-BR.'"
 
 copy_static_file '.gitignore'
 git :add => '.'
