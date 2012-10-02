@@ -24,19 +24,19 @@ pt-BR:
         sign_in: "Entrar"
     confirmations:
       new:
-        resend_confirmation_instructions: "Resend confirmation instructions"
+        resend_confirmation_instructions: "Enviar instruções de confirmação novamente"
     mailer:
       confirmation_instructions:
         welcome_email: "Bem-vindo %{email}!"
-        you_can_confirm_your_account: "You can confirm your account email through the link below:"
+        you_can_confirm_your_account: "Você pode confirmar sua conta seguindo o link abaixo:"
       reset_password_instructions:
-        if_you_didn_t_request_this: "If you didn't request this, please ignore this email."
-        your_password_wont_change: "Your password won't change until you access the link above and create a new one."
-        someone_has_requested_a_link_to_change_your_password: "Someone has requested a link to change your password, and you can do this through the link below."
+        if_you_didn_t_request_this: "Se você não solicitou isso, por favor ignore esta mensagem."
+        your_password_wont_change: "Sua senha não será alterada enquanto você não acessar o link abaixo e salvar uma nova senha."
+        someone_has_requested_a_link_to_change_your_password: "Alguém requisitou um link para recadastrar a sua senha, isso pode ser feito pelo link abaixo."
       unlock_instructions:
-        hello_email: "Hello %{email}!"
-        your_account_has_been_locked: "Your account has been locked due to an excessive amount of unsuccessful sign in attempts."
-        click_the_link_below: "Click the link below to unlock your account:"
+        hello_email: "Olá, %{email}!"
+        your_account_has_been_locked: "Sua conta foi bloqueada devido ao alto número de tentativas inválidas de autenticação."
+        click_the_link_below: "Siga o link abaixo para desbloquear sua conta:"
     passwords:
       edit:
         change_your_password: "Trocar senha"
@@ -48,7 +48,7 @@ pt-BR:
         send_me_reset_password_instructions: "Envie instruções para resetar minha senha"
     unlocks:
       new:
-        resend_unlock_instructions: "Resend unlock instructions"
+        resend_unlock_instructions: "Enviar instruções de desbloqueio novamente"
     shared:
       are_you_sure: "Você tem certeza?"
       update: "Atualizar"
@@ -58,11 +58,11 @@ pt-BR:
         sign_in: "Login"
         sign_up: "Cadastrar"
         reset_your_password: "Esqueci minha senha"
-        didn_t_receive_confirmation_instructions?: "Didn't receive confirmation instructions?"
-        didn_t_receive_unlock_instructions?: "Didn't receive unlock instructions?"
-        unlock_my_account: "Unlock my account"
-        confirm_my_account: "Confirm my account"
-        change_my_password: "Change my password"
+        didn_t_receive_confirmation_instructions?: "Não recebeu instruções de confirmação?"
+        didn_t_receive_unlock_instructions?: "Não recebeu instruções de desbloqueio?"
+        unlock_my_account: "Desbloquear minha conta"
+        confirm_my_account: "Confirmar minha conta"
+        change_my_password: "Mudar minha senha"
         or: " ou "
         back: "Voltar"
 
