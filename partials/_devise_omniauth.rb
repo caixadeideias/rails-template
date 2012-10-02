@@ -45,6 +45,15 @@ CONFIGS
   git :add => '.'
   git :commit => "-aqm 'Create Devise views'"
 
+  copy_static_file 'spec/support/authentication_helper.rb'
+  inject_into_file "spec/spec_helper.rb", "\n  config.include AuthenticationHelper, type: :controller", :after => "RSpec.configure do |config|"
+  git :add => "."
+  git :commit => "-aqm 'Capybara's authentication helper'"
+
+  copy_static_file 'spec/acceptance/user/login.rb'
+  git :add => "."
+  git :commit => "-aqm 'Acceptance test for user\'s login'"
+
   in_root do
     run "rake db:migrate"
   end
