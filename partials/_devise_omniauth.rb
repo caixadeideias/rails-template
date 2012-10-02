@@ -50,6 +50,10 @@ CONFIGS
   git :add => "."
   git :commit => "-aqm 'Capybara's authentication helper'"
 
+  copy_static_file 'spec/acceptance/user/login.rb'
+  git :add => "."
+  git :commit => "-aqm 'Acceptance test for user\'s login'"
+
   in_root do
     run "rake db:migrate"
   end
