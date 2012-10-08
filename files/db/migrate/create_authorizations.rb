@@ -7,6 +7,8 @@ class CreateAuthorizations < ActiveRecord::Migration
 
       t.timestamps
     end
+
     add_index :authorizations, :user_id
+    add_foreign_key :authorizations, :users, :dependent => :delete
   end
 end
