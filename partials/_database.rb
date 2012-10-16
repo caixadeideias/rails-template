@@ -7,6 +7,8 @@ run 'cp -f config/database.sample.yml config/database.yml'
 git :add => 'config/database.sample.yml'
 git :commit => "-qm 'Adding config/database.sample.yml.'"
 
+git :"update-index" => '--assume-unchanged config/database.yml'
+
 after_bundler do
   in_root do
     run "rake db:create"
