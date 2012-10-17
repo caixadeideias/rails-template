@@ -14,6 +14,14 @@ copy_static_file 'app/views/layouts/_flash.html.slim'
 git :add => '.'
 git :commit => "-aqm 'Add flash partial.'"
 
+copy_static_file 'app/views/layouts/_header.html.slim'
+git :add => '.'
+git :commit => "-aqm 'Add header partial.'"
+
+copy_static_file 'app/views/layouts/_footer.html.slim'
+git :add => '.'
+git :commit => "-aqm 'Add footer partial.'"
+
 copy_static_file 'config/locales/devise.views.en.yml'
 copy_static_file 'config/locales/devise.views.pt-BR.yml'
 copy_static_file 'config/locales/devise.simple_form.en.yml'
