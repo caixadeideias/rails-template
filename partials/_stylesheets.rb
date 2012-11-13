@@ -17,4 +17,4 @@ end
 
 copy_static_file 'app/assets/stylesheets/_flash.css.scss'
 git :add => '.'
-git :commit => '-aqm Add _flash.css.scss'
+git :commit => "-aqm 'Add _flash.css.scss'"
