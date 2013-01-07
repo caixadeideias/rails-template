@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
+# I18n
+#gem 'devise-i18n'
+
 # Database
 gem 'pg'
 gem 'foreigner'
