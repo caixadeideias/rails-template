@@ -72,7 +72,6 @@ apply_n :default
 apply_n :locale
 apply_n :database
 apply_n :rspec
-apply_n :backbone
 apply_n :javascripts
 apply_n :stylesheets
 apply_n :generators
