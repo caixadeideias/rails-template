@@ -15,6 +15,6 @@ html
     = javascript_include_tag "application"
   body data-controller-class=controller.class.name data-controller-name=controller.controller_name.camelize data-action=controller.action_name.camelize
     = render partial: 'layouts/flash', locals: { flash: flash } unless flash.empty?
-    header
+    = render "layouts/header"
     = yield
-    footer
+    = render "layouts/footer"
