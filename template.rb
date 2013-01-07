@@ -76,7 +76,6 @@ apply_n :simplecov
 apply_n :javascripts
 apply_n :stylesheets
 apply_n :generators
-apply_n :rvm
 apply_n :devise_omniauth
 apply_n :simple_form
 
