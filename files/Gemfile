@@ -2,13 +2,12 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
+gem 'pg'
+gem 'thin'
+
 # I18n
 gem 'rails-i18n'
-#gem 'devise-i18n'
-
-# Database
-gem 'pg'
-gem 'foreigner'
+gem 'devise-i18n'
 
 # Authentication
 #gem 'devise', '~> 2.1.2'
@@ -16,18 +15,15 @@ gem 'foreigner'
 #gem 'omniauth-facebook', '~> 1.2.0'
 #gem 'omniauth-twitter', '~> 0.0.12'
 
-# Server
-gem 'thin'
+# Administration
+#gem 'activeadmin'
 
-# Improvements
+# Tools
 gem 'inherited_resources'
 gem 'simple_form'
 #gem 'has_scope'
 
-# Administration
-#gem 'activeadmin'
-
-# Frontend stuff
+# Views
 gem 'jquery-rails'
 gem 'slim'
 gem 'slim-rails'
@@ -42,6 +38,11 @@ end
 
 group :development, :test do
   gem 'pry'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :test do
