@@ -8,11 +8,5 @@ else
   copy_static_file 'app/assets/javascripts/init.js'
 end
 
-gsub_file 'app/assets/javascripts/application.js', "//= require_tree .", "
-//= require_tree ./lib
-//= require ./app.js
-//= require_tree ./app
-//= require ./init.js
-"
 git :add => '.'
 git :commit => "-aqm 'Add defaults javascripts'"
