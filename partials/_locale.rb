@@ -3,6 +3,7 @@ if would_you_like? "Brazilian locale and timezone? [y,n]"
     <<BR_CONFIG
 
     # Brazilian locale and timezone
+    config.i18n.locale = :"pt-BR"
     config.i18n.default_locale = :"pt-BR"
     config.time_zone = "Brasilia"
 BR_CONFIG
